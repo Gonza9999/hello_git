@@ -1,0 +1,56 @@
+DESDE TERMINAL:
+https://ohmyz.sh //web para tunear la terminarl
+touch nombreArchivo.py // Crea un archivo en la carpeta donde estemos
+.gitignore //vamos a poner ficheros que no queremos guardar
+
+RAMAS: main
+
+git config --global user.name "[nombre de usuario]" //configura el nombre de usuario global de git
+git config --global user.email "[Mi email]" //configura el mail del usuario a nivel global
+git config --list //muestra tu configuracion
+git -v //muestra la version actual de git
+
+git init //inicia git en la carpeta donde estemos parados
+git branch -m main //cambio la rama master por main(rama principal)
+git status //vemos el estado de git de nuestro proyecto
+git add [fichero] // agrego el fichero a la parte de stage
+git add . //Agrego todo a la parte de stage
+git commit -m -"comentario" //lanzamos el fichero que estaba en stage a git
+git log // podemos ver si se realizo el commit
+git checkout hellogit2.py //situarnos en un punto concreto, vuelvo al ultimo commit realizado
+git reset //vuelvo a la ultima fotografia
+git log --graph //Lo mismo que git log pero muestra una rama para ver el camino
+git log --graph --pretty=oneline //igual que el git log pero sin tanta info, solo muestra el nombre de los commit
+git log --graph --decorate --all --oneline //me da el hash y el nombre del commit
+git config --global alias.tree "log --graph --decorate --all --oneline" //Damos un alias al comando que queramos
+git tree // usamos el alias declarado arriba
+git diff // para ver que cambios habia antes y que cambios tengo sin hacer un commit antes o un add 
+git reset --hard [id por ej: 44abb8f] // me ubica en 44abb8f y borra lo posterior
+git reset --hard [id por ej: 44abb8f] //vuelve a lo que borre arriba con git reset --hard, funciona tanto para atras como para adelante
+git reflog // hisotorial completo de iteraccioens que hicimos(estan todos los commit incluso los borrados)
+git tag nombre_etiqueta // Creo una etiqueta por ej para decir hasta que punto incluye la version 1.0
+git tag // muestra los tag creados
+git checkout tags/clase_1 //muevo la cabeza a donde puse la etiqueta clase_1
+git checkout main //vuelve al ultimo cambio y situa la cabeza ahi
+
+crear rama: 
+
+git branch [nombreRama] //Creo nueva rama
+git branch //Muestra las ramas existentes
+git branch -d [nombreRama] //Borra rama
+git switch [nombreRama] //Me muevo a la rama que quiero, es la mejor practica para cambiar de rama
+
+git merge [nombreRama]//combinar cambios de una rama, combina los datos de nombreRama con los datos de la rama donde estoy parados
+git stash //sirve para decir que guarde algo sin hacer commit, osea que lo almacene temporalmente (sirve para cuando dejas algo a la mitad sin que funciones)
+git stash list //sirve para ver stash que hiciste
+git stash pop //recupero lo que deje guardado de forma temporal
+git stash drop //elimino stage 
+
+PARA MAS INFO PUEDO ENTRAR A https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
+
+
+-------GIT HUB--------
+
+README //un fichero que sirve como documentacion
+.gitignore //sirve para poner archivos que queremos que ignore
+license //Si queremos agregar una licencia
