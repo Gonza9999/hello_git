@@ -54,3 +54,4 @@ PARA MAS INFO PUEDO ENTRAR A https://training.github.com/downloads/es_ES/github-
 README //un fichero que sirve como documentacion
 .gitignore //sirve para poner archivos que queremos que ignore
 license //Si queremos agregar una licencia
+git remote
