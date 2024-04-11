@@ -54,4 +54,15 @@ PARA MAS INFO PUEDO ENTRAR A https://training.github.com/downloads/es_ES/github-
 README //un fichero que sirve como documentacion
 .gitignore //sirve para poner archivos que queremos que ignore
 license //Si queremos agregar una licencia
-git remote
+git remote [direccion remota] // emparejo desde git un repositorio remoto para posteriormente subir cambios
+git fetch //descarga en local el historial de cambios pero sin descargar los cambios
+git pull //descargar el historial y los cambios
+git push //sube los cambios de local a github(luego del add y del commit)
+git clone [url del repositorio SSH] // clona el repositorio de github en mi pc
+
+fork es para clonar un repositorio en tu maquina y hacerles los cambios que quieras sin modificar el original(se hace una copia en tu repositorio)
+pull request //contribuir mis cambios a los demas repositorios
+
+gitkraken git-github desktop //muy completo
+
+git y github flow
